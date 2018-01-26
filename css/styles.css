@@ -1,3 +1,20 @@
 body {
   background-image: url(../img/Pizza1.jpg);
 }
+
+.well {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#costDisplay {
+  font-weight: bold;
+}

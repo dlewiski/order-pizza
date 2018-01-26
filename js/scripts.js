@@ -39,12 +39,18 @@ Pizza.prototype.calculateCost = function() {
   return cost;
 };
 
+//Function to create ingredient list
+
+
 //Prototype to display name and cost of pizza
 Pizza.prototype.displayPizza = function() {
   $("#displayPizza").append(
     "<div class='well'>" +
     "<h3>Thank you " + this.name + " for your order!</h3>" +
-    "<p>The total cost for your pizza is: $" + this.cost +
+    "<p>The total cost for your pizza is: </p>" +
+    "<p><span id='costDisplay'>$" + this.cost + "</span></p>" +
+    "<p>Here is a summary of your order:</p>" +
+    "<ul id='list'>One " + this.size + " pizza with:</ul>" +
     "</div>"
   )
 }
@@ -58,9 +64,12 @@ $(document).ready(function() {
     pizza.addIngredient();
     pizza.cost = pizza.calculateCost();
     pizza.displayPizza();
+    $("#list").append(
+      pizza.ingredients.forEach(function(ingredient) {
+        "<li>" + ingredient + "</li>";
+      }));
+
     console.log(pizza);
     console.log(pizza.cost);
+    });
   });
-
-
-});
