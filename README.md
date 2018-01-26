@@ -15,7 +15,7 @@ _This website provides and input for the user to enter a number. After the user 
 ## Specifications
 
 * _Program captures an ingredient from user"_
-  * **_Example selection: olives**
+  * **_Example selection: olives_**
   * **_Example Output: ["olives"]_**
 
 * _Program stores ingredient into pizza object"_
