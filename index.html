@@ -13,6 +13,31 @@
       <div class="jumbotron">
         <h1>Order Pizza</h1>
       </div>
+      <form id="pizzaInput">
+        <div class="form-group">
+           <label for="name">Name</label>
+           <input type="text" class="form-control" id="name">
+        </div>
+           <div class="form-group">
+             <label for="ingredient">Select an ingredient</label>
+             <select class="form-control" id="ingredient">
+               <option>olives</option>
+               <option>pepperoni</option>
+               <option>onions</option>
+               <option>sausage</option>
+             </select>
+           </div>
+             <div class="form-group">
+               <label for="size">Size</label>
+               <select class="form-control" id="size">
+                 <option>small</option>
+                 <option>sarge</option>
+               </select>
+             </div>
+
+         <button type="submit" class="btn btn-primary">Add</button>
+
+      </form>
     </div>
   </body>
 </html>
