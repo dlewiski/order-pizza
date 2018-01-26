@@ -6,12 +6,12 @@
 
 ## Description
 
-_This website allows a user to enter their name and place and order for a pizza. The user can select from four different toppings as well as a small or large pizza. After clicking the order pizza submit button, the program calculates and displays the cost of the pizza. The cost of the pizza is determined by how many ingredients are selected and whether the user chooses a small or large pizza. The UI also displays the list of ingredients the user selected_
+_This website allows a user to enter their name and place an order for a pizza. The user can select from four different toppings as well as a small or large pizza. After clicking the order pizza submit button, the program calculates and displays the cost of the pizza. The cost of the pizza is determined by how many ingredients are selected and whether the user chooses a small or large pizza. The UI also displays the list of ingredients the user selected_
 
 ## Setup/Installation Requirements
 
-* _Follow this link https://github.com/dlewiski/order-pizza and open the index.html file into any web browser_
-* _Follow this link https://github.com/dlewiski/order-pizza and open the index.html file into any web browser_
+* _Open this link https://dlewiski.github.io/order-pizza/ in any web browser_
+* _If the first step does not work, follow this link https://github.com/dlewiski/order-pizza and open the index.html file into any web browser_
 
 ## Specifications
 
@@ -49,7 +49,7 @@ _This website allows a user to enter their name and place and order for a pizza.
 
 ## Known Bugs
 
-_There are still issues with the program determining what to do with certain numbers_
+_Ingredients will stack on the first pizza order display. Multiple pizza functionality has not yet been completed_
 
 ## Support and contact details
 
