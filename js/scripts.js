@@ -13,7 +13,6 @@ function pizzaMaker() {
   var name = $("#name").val();
   var size = $("#size").val();
   var newPizza = new Pizza(name, size);
-
   return newPizza;
 }
 
@@ -34,7 +33,6 @@ Pizza.prototype.calculateCost = function() {
     cost += 5;
   }
   cost += this.ingredients.length;
-  console.log(this.ingredients.length);
   return cost;
 };
 
@@ -67,8 +65,5 @@ $(document).ready(function() {
     pizza.cost = pizza.calculateCost();
     pizza.displayPizza();
     pizza.displayIngredients();
-
-    console.log(pizza.ingredients);
-    console.log(pizza.cost);
     });
   });
