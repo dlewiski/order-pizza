@@ -20,7 +20,7 @@ function pizzaMaker() {
 //Prototype to push ingredients to Pizza.ingredients array
 Pizza.prototype.addIngredient = function() {
   var checks = document.getElementsByClassName("ingredient");
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < checks.length; i++) {
     if (checks[i].checked === true) {
     this.ingredients.push(checks[i].value);
     }
