@@ -25,7 +25,6 @@ Pizza.prototype.addIngredient = function() {
     this.ingredients.push(checks[i].value);
     }
   }
-  console.log(this.ingredients);
 }
 
 //Prototype to calculate cost of pizza
@@ -39,8 +38,12 @@ Pizza.prototype.calculateCost = function() {
   return cost;
 };
 
-//Function to create ingredient list
-
+//Prototype to display ingredient list
+Pizza.prototype.displayIngredients = function() {
+  this.ingredients.forEach(function(ingredient) {
+    $("#list").append("<li>" + ingredient + "</li>");
+  });
+}
 
 //Prototype to display name and cost of pizza
 Pizza.prototype.displayPizza = function() {
@@ -55,7 +58,6 @@ Pizza.prototype.displayPizza = function() {
   )
 }
 
-
 //User logic
 $(document).ready(function() {
   $("#pizzaInput").submit(function(event) {
@@ -64,12 +66,9 @@ $(document).ready(function() {
     pizza.addIngredient();
     pizza.cost = pizza.calculateCost();
     pizza.displayPizza();
-    $("#list").append(
-      pizza.ingredients.forEach(function(ingredient) {
-        "<li>" + ingredient + "</li>";
-      }));
+    pizza.displayIngredients();
 
-    console.log(pizza);
+    console.log(pizza.ingredients);
     console.log(pizza.cost);
     });
   });
