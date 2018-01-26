@@ -36,8 +36,10 @@ Pizza.prototype.calculateCost = function() {
 //Prototype to display name and cost of pizza
 Pizza.prototype.displayPizza = function() {
   $("#displayPizza").append(
+    "<div class='well'>" +
     "<h3>Thank you " + this.name + " for your order!</h3>" +
-    "<p>The total cost for your pizza is: $" + this.cost
+    "<p>The total cost for your pizza is: $" + this.cost +
+    "</div>"
   )
 }
 
