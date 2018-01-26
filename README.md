@@ -6,11 +6,12 @@
 
 ## Description
 
-_This website provides and input for the user to enter a number. After the user enters a number and clicks submit, the website will display information below the form. Depending upon what number the user enters, a specific result will display. It will either show, beep, boop, or I'm sorry David I'm afraid you cant do that, or a list of all the integers up to that number_
+_This website allows a user to enter their name and place and order for a pizza. The user can select from four different toppings as well as a small or large pizza. After clicking the order pizza submit button, the program calculates and displays the cost of the pizza. The cost of the pizza is determined by how many ingredients are selected and whether the user chooses a small or large pizza. The UI also displays the list of ingredients the user selected_
 
 ## Setup/Installation Requirements
 
-* _Follow this link https://github.com/dlewiski/beep-boop and open the index.html file into any web browser_
+* _Follow this link https://github.com/dlewiski/order-pizza and open the index.html file into any web browser_
+* _Follow this link https://github.com/dlewiski/order-pizza and open the index.html file into any web browser_
 
 ## Specifications
 
@@ -20,7 +21,7 @@ _This website provides and input for the user to enter a number. After the user 
 
 * _Program stores ingredient into pizza object"_
   * **_Example selection: olives_**
-  * **_Example Output: pizza { ingredient: olives}_**
+  * **_Example Output: pizza {ingredient: olives}_**
 
 * _Program lets user select a size and store the selection in the pizza object"_
   * **_Example Input: Large_**
@@ -40,10 +41,10 @@ _This website provides and input for the user to enter a number. After the user 
 
 * _Program stores user name in the pizza object_
   * **_Example Input: David**
-  * **_Example Output: pizza { name: ingredients: [olives, pepperoni, onions, sausage], size: Large}_**
+  * **_Example Output: pizza {name: ingredients: [olives, pepperoni, onions, sausage], size: Large}_**
 
 * _Program displays user name and cost of pizza_
-  * **_Example Input: David, (olives, pepperoni, onions, sausage), Large **
+  * **_Example Input: David, (olives, pepperoni, onions, sausage), Large_**
   * **_Example Output: "Thank you for your order David! Your total is $19"_**
 
 ## Known Bugs
