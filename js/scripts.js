@@ -22,6 +22,17 @@ Pizza.prototype.addIngredient = function() {
   this.ingredients.push(ingredient);
 }
 
+//Prototype to calculate cost of pizza
+Pizza.prototype.calculateCost = function () {
+  var cost = 10;
+  if (this.size === "large") {
+    cost += 5;
+  }
+  return cost;
+
+
+};
+
 
 // User
 $(document).ready(function() {
@@ -29,7 +40,9 @@ $(document).ready(function() {
     event.preventDefault();
     var pizza = pizzaMaker();
     pizza.addIngredient();
+    var pizzaCost = pizza.calculateCost();
     console.log(pizza);
+    console.log(pizzaCost);
   });
 
 
