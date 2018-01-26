@@ -18,18 +18,25 @@
            <label for="name">Name</label>
            <input type="text" class="form-control" id="name">
         </div>
-           <div class="form-group">
-             <fieldset>
-               <legend>Select your ingredients</legend>
-             <input type="checkbox" class="form-control" id="ingredient">
-             <label for="ingredient">Select your ingredients</label>
-               <option>olives</option>
-               <option>pepperoni</option>
-               <option>onions</option>
-               <option>sausage</option>
-             </select>
-            </fieldset>
-           </div>
+          <fieldset>
+            <legend>Select your ingredients</legend>
+            <div>
+              <input type="checkbox" class="ingredient" id="onions" value="onions">
+              <label for="onions">onions</label>
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" id="pepperoni" value="pepperoni">
+              <label for="pepperoni">pepperoni</label>
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" id="olives" value="olives">
+              <label for="olives">olives</label>
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" id="sausage" value="sausage">
+              <label for="sausage">sausage</label>
+            </div>
+          </fieldset><br>
              <div class="form-group">
                <label for="size">Size</label>
                <select class="form-control" id="size">
@@ -37,7 +44,6 @@
                  <option>large</option>
                </select>
              </div>
-
          <button type="submit" class="btn btn-primary">Add</button>
 
       </form><br>

@@ -19,8 +19,13 @@ function pizzaMaker() {
 
 //Prototype to push ingredients to Pizza.ingredients array
 Pizza.prototype.addIngredient = function() {
-  var ingredient = $("#ingredient").val();
-  this.ingredients.push(ingredient);
+  var checks = document.getElementsByClassName("ingredient");
+  for (i = 0; i < 4; i++) {
+    if (checks[i].checked === true) {
+    this.ingredients.push(checks[i].value);
+    }
+  }
+  console.log(this.ingredients);
 }
 
 //Prototype to calculate cost of pizza
@@ -30,6 +35,7 @@ Pizza.prototype.calculateCost = function() {
     cost += 5;
   }
   cost += this.ingredients.length;
+  console.log(this.ingredients.length);
   return cost;
 };
 
